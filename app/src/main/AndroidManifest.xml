@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CzysteZąbki">
-        <activity android:name=".WprowadzanieDanych"></activity>
+        <activity android:name=".WyborOpcji"></activity>
+        <activity android:name=".WyborAwatara" />
+        <activity android:name=".WprowadzanieDanych" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
