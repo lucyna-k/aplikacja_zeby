@@ -20,15 +20,15 @@ class MainActivity : AppCompatActivity() {
 
         dalej?.setOnClickListener(object : View.OnClickListener{
                 override fun onClick(v: View?){
-                    akt_WprDanych()
+                    aktywuj_WyborKonta()
                 }
         })
 
     }
-    private fun akt_WprDanych(){
-        val intent= Intent(this,WprowadzanieDanych::class.java)
-        startActivity(intent)
 
+    private fun aktywuj_WyborKonta() {
+        val intent= Intent(this,WyborKonta::class.java)
+        startActivity(intent)
     }
 
 
