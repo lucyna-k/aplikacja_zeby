@@ -23,6 +23,9 @@
         <activity android:name=".WyborOpcji" />
         <activity android:name=".WyborAwatara" />
         <activity android:name=".WprowadzanieDanych" />
+        <activity android:name=".WyborKonta" />
+        <activity android:name=".KontoRodzica" />
+        <activity android:name=".WprowadzanieTerminu" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

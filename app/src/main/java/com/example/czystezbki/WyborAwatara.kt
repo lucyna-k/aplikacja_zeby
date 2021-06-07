@@ -15,7 +15,7 @@ class WyborAwatara : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wybor_awatara)
-
+        val noweDziecko = savedInstanceState?.getString("noweDziecko")
         awatar1=findViewById(R.id.awatar1button)
         awatar2=findViewById(R.id.awatarbutton2)
         awatar3=findViewById(R.id.awatarbutton3)
@@ -23,27 +23,31 @@ class WyborAwatara : AppCompatActivity() {
 
         awatar1?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?){
-                akt_WyborOpcji()
+                BazaDzieci.noweDziecko.avatar="1"
+                aktywujWyborWizyty()
             }
         })
         awatar2?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?){
-                akt_WyborOpcji()
+                BazaDzieci.noweDziecko.avatar="2"
+                aktywujWyborWizyty()
             }
         })
         awatar3?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?){
-                akt_WyborOpcji()
+                BazaDzieci.noweDziecko.avatar="3"
+                aktywujWyborWizyty()
             }
         })
         awatar4?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?){
-                akt_WyborOpcji()
+                BazaDzieci.noweDziecko.avatar="4"
+                aktywujWyborWizyty()
             }
         })
     }
-    private fun akt_WyborOpcji(){
-        val intent= Intent(this,WyborOpcji::class.java)
+    private fun aktywujWyborWizyty(){
+        val intent= Intent(this,WprowadzanieTerminu::class.java)
         startActivity(intent)
 
     }
