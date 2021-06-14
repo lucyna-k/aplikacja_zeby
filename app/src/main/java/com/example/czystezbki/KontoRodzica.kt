@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 class KontoRodzica : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        getSupportActionBar()?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.konto_rodzica)
 

@@ -5,43 +5,42 @@
     android:id="@+id/powitanie"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@drawable/tlo"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/TekstPanelRodzica"
-        android:layout_width="397dp"
-        android:layout_height="114dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:text="Panel rodzica"
         android:textAlignment="center"
         android:textSize="30sp"
-        android:typeface="monospace"
+        android:textColor="#FFF"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/ButtonDodajDziecko"
-        android:layout_width="159dp"
-        android:layout_height="89dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="444dp"
         android:text="Dodaj nowe dziecko"
+        android:background="@drawable/przyciski"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
-        app:layout_constraintStart_toStartOf="@id/TekstPanelRodzica" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
         android:id="@+id/ListaDzieci"
-        android:layout_width="372dp"
-        android:layout_height="253dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
         android:tooltipText="Tutaj beda dziecka"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent">
 
 
@@ -53,10 +52,10 @@
         android:layout_height="89dp"
         android:layout_marginBottom="44dp"
         android:text="Wroc do kont"
+        android:background="@drawable/przyciski"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toStartOf="@id/TekstPanelRodzica" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

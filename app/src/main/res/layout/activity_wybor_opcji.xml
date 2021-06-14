@@ -4,40 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tlo"
     tools:context=".WyborOpcji">
 
-    <TextView
-        android:id="@+id/wyboropcji"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Co chcesz zrobić?"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textTermin"
-        android:layout_width="269dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:textAlignment="center"
         android:text="Sprawdź termin wizyty"
-        android:textSize="24dp"
+        android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.618"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wyboropcji" />
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
     <TextView
         android:id="@+id/textMycie"
-        android:layout_width="275dp"
-        android:layout_height="41dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:text="Mycie zębów"
         android:textAlignment="center"
-        android:textSize="24dp"
+        android:textColor="#FFF"
+        android:textSize="40dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="OK"
+        android:background="@drawable/przyciski"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTermin" />
@@ -59,9 +55,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="OK"
+        android:background="@drawable/przyciski"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textMycie"
         app:layout_constraintVertical_bias="0.015" />

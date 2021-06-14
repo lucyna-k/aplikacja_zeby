@@ -10,6 +10,7 @@ private var sprsaldo: Button?=null
 
 class KoniecMycia : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        getSupportActionBar()?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_koniec_mycia)
 

@@ -5,30 +5,32 @@
     android:id="@+id/powitanie"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5"
+    android:background="@drawable/tlo"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/TekstWitaj"
-        android:layout_width="397dp"
-        android:layout_height="114dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
         android:text="Witaj w aplikacji Czyste Ząbki"
         android:textAlignment="center"
-        android:textSize="30sp"
-        android:typeface="monospace"
+        android:textColor="#FFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/TekstOpis"
-        android:layout_width="358dp"
-        android:layout_height="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="Razem z Tobą zadbamy o poprawną higienę jamy ustnej!"
         android:textAlignment="center"
-        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.698"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,8 +38,8 @@
 
     <ImageView
         android:id="@+id/imageZab"
-        android:layout_width="185dp"
-        android:layout_height="210dp"
+        android:layout_width="219dp"
+        android:layout_height="231dp"
         app:layout_constraintBottom_toTopOf="@+id/ButtonNextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="Dalej"
+        android:background="@drawable/przyciski"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

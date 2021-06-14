@@ -13,6 +13,7 @@ private var awatar4: Button? = null
 
 class WyborAwatara : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        getSupportActionBar()?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wybor_awatara)
         val noweDziecko = savedInstanceState?.getString("noweDziecko")

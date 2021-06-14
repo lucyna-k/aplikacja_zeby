@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tlo"
     tools:context=".KoniecMycia">
 
     <TextView
@@ -11,8 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
+        android:textColor="#FFF"
         android:text="Koniec czasu!"
-        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textSize="50dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,8 +27,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:textSize="30dp"
+        android:textColor="#FFF"
         android:textAlignment="center"
-        android:text="Brawo! \n Po raz kolejny zadbałeś \n o poprawną higienę Twoich zębów!"
+        android:text="Brawo! \n Po raz kolejny zadbałeś o poprawną higienę Twoich zębów!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtKoniecCzasu" />
@@ -37,6 +41,7 @@
         android:layout_marginTop="50dp"
         android:text="W nagrodę otrzymujesz \n 1 pkt!"
         android:textSize="30dp"
+        android:textColor="#FFF"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,9 +51,10 @@
         android:id="@+id/btnSaldo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="60dp"
         android:text="Sprawdź ilość \n punktów"
         android:textSize="24dp"
+        android:background="@drawable/przyciski"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/btnPodsumowanie"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,6 +67,7 @@
         android:layout_marginBottom="60dp"
         android:textSize="24dp"
         android:text="Zakończ"
+        android:background="@drawable/przyciski"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

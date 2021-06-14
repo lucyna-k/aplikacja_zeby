@@ -10,6 +10,7 @@ private var start: Button?=null
 
 class ZaczynamyMycie : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        getSupportActionBar()?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_zaczynamy_mycie)
 
@@ -21,7 +22,6 @@ class ZaczynamyMycie : AppCompatActivity() {
                 akt_Mycie1()
             }
         })
-
 
     }
 

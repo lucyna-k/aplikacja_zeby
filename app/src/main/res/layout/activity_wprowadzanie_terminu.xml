@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tlo"
     tools:context=".WprowadzanieDanych">
 
     <EditText
@@ -23,10 +24,13 @@
     <TextView
         android:id="@+id/miejsceNaTermin"
         android:layout_width="wrap_content"
-        android:layout_height="100px"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
         android:inputType="textPersonName"
         android:text="Wprowadz termin"
         android:textSize="24dp"
+        android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
+        android:background="@drawable/przyciski"
         android:text="Zapisz dziecko"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -10,6 +10,7 @@ private var wroc: Button?=null
 
 class SaldoPunktow : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        getSupportActionBar()?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_saldo_punktow)
 

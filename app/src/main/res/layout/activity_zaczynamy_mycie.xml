@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tlo"
     tools:context=".ZaczynamyMycie">
 
     <TextView
@@ -12,6 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:text="Zaczynamy mycie zębów! Gotowy?"
+        android:textStyle="bold"
+        android:textColor="#FFF"
         android:textAlignment="center"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="START"
+        android:background="@drawable/przyciski"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

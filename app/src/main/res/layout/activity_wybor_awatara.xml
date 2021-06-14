@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tlo"
     tools:context=".WyborAwatara">
 
     <TextView
@@ -11,15 +12,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
         android:text="Wybierz awatara"
-        android:textSize="30dp"
+        android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/awatar1button"
-        android:layout_width="193dp"
+        android:layout_width="192dp"
         android:layout_height="184dp"
         android:layout_marginTop="60dp"
         android:foreground="@drawable/awatar1"
@@ -31,7 +34,7 @@
 
     <Button
         android:id="@+id/awatarbutton2"
-        android:layout_width="195dp"
+        android:layout_width="192dp"
         android:layout_height="184dp"
         android:layout_marginTop="60dp"
         android:foreground="@drawable/awatar2"
@@ -43,8 +46,8 @@
 
     <Button
         android:id="@+id/awatarbutton4"
-        android:layout_width="182dp"
-        android:layout_height="196dp"
+        android:layout_width="192dp"
+        android:layout_height="184dp"
         android:layout_marginTop="60dp"
         android:foreground="@drawable/awatar3"
         android:text="Button"
@@ -55,8 +58,8 @@
 
     <Button
         android:id="@+id/awatarbutton3"
-        android:layout_width="188dp"
-        android:layout_height="192dp"
+        android:layout_width="192dp"
+        android:layout_height="184dp"
         android:layout_marginTop="60dp"
         android:foreground="@drawable/awatar4"
         android:text="Button"

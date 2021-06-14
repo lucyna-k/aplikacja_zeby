@@ -12,6 +12,7 @@ class WyborKonta : AppCompatActivity() {
     private var kontoDziecka: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        getSupportActionBar()?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.wybor_konta)
 

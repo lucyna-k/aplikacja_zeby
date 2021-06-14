@@ -12,6 +12,7 @@ private var dalej: Button? = null
 class WprowadzanieDanych : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        getSupportActionBar()?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wprowadzanie_danych)
 

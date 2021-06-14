@@ -13,6 +13,7 @@ private var mycie: Button?=null
 
 class WyborOpcji : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        getSupportActionBar()?.hide()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wybor_opcji)
 

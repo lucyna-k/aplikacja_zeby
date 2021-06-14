@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tlo"
     tools:context=".WprowadzanieDanych">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="20dp"
+        android:textColor="#FFF"
         android:text="Wprowadź imię:"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/miejsceNaImie"
@@ -40,6 +42,7 @@
         android:layout_marginBottom="20dp"
         android:text="Wpisz wiek:"
         android:textSize="30dp"
+        android:textColor="#FFF"
         app:layout_constraintBottom_toTopOf="@+id/miejsceNaWiek"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -63,6 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
+        android:background="@drawable/przyciski"
         android:text="OK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
