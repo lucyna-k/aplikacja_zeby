@@ -26,7 +26,7 @@ class Mycie1 : AppCompatActivity() {
                 var sekundy = TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished)-TimeUnit.MINUTES.toSeconds(minuty)
                 if(sekundy>=10){
                         timer?.setText("$minuty : $sekundy")
-                    }
+                }
                 else timer?.setText("$minuty : 0$sekundy")
             }
 
@@ -34,9 +34,8 @@ class Mycie1 : AppCompatActivity() {
                 aktywuj_Mycie2()
             }
         }.start()
+    }
 
-
-        }
     private fun aktywuj_Mycie2() {
         val intent= Intent(this,Mycie2::class.java)
         startActivity(intent)

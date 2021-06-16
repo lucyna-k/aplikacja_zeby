@@ -16,7 +16,10 @@ class TerminWizyty : AppCompatActivity() {
         setContentView(R.layout.activity_termin_wizyty)
 
         val termin: TextView = findViewById(R.id.editTextDate)
+        if(BazaDzieci.wybraneDziecko()!=null)
         termin.text = BazaDzieci.wybraneDziecko().termin
+        else
+            termin.text="Nie wybrano terminu, przejdź do konta rodzica"
 
         powrot=findViewById(R.id.btnBack)
         powrot?.setOnClickListener(object : View.OnClickListener{

@@ -11,14 +11,12 @@
         android:id="@+id/wprImie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="150dp"
         android:textColor="#FFF"
         android:text="Wprowadź imię:"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/miejsceNaImie"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,24 +50,34 @@
         android:id="@+id/miejsceNaWiek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="230dp"
+        android:layout_marginBottom="150dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="24dp"
         app:layout_constraintBottom_toTopOf="@+id/ButtonOK"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/ButtonOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="120dp"
         android:background="@drawable/przyciski"
         android:text="OK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonpowrot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/przyciski"
+        android:text="WRÓC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonOK" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,7 +8,7 @@ import android.widget.Button
 
 private var termin: Button?=null
 private var mycie: Button?=null
-
+private var powrót: Button?=null
 
 
 class WyborOpcji : AppCompatActivity() {
@@ -19,6 +19,7 @@ class WyborOpcji : AppCompatActivity() {
 
         termin=findViewById(R.id.btntermin)
         mycie=findViewById(R.id.btnMycie)
+        powrót = findViewById(R.id.buttonpowrot)
 
         termin?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?){
@@ -29,6 +30,11 @@ class WyborOpcji : AppCompatActivity() {
         mycie?.setOnClickListener(object : View.OnClickListener{
             override fun onClick(v: View?){
                 akt_Mycie()
+            }
+        })
+        powrót?.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(v: View?) {
+                aktywuj_Powrot()
             }
         })
 
@@ -42,6 +48,10 @@ class WyborOpcji : AppCompatActivity() {
         val intent= Intent(this,ZaczynamyMycie::class.java)
         startActivity(intent)
 
+    }
+    private fun aktywuj_Powrot(){
+        val intent= Intent(this,WyborKonta::class.java)
+        startActivity(intent)
     }
 
 
