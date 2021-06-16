@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Otwórz buzię i umyj górną część \n dolnych zębów i dolną częsć \n górnych zębów"
+        android:text="Otwórz buzię i umyj górną część \n dolnych zębów i dolną częsć \n górnych zębów."
         android:textAlignment="center"
         android:textColor="#FFF"
         android:textSize="22dp"
