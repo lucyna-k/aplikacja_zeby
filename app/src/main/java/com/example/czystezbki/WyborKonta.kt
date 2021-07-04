@@ -26,12 +26,7 @@ class WyborKonta : AppCompatActivity() {
 
         kontoDziecka=findViewById(R.id.ButtonDziecko)
 
-        kontoDziecka?.setOnClickListener(object : View.OnClickListener{
-            override fun onClick(v: View?){
-                aktywuj_WyborOpcji()
-            }
-        })
-
+        kontoDziecka?.setOnClickListener { aktywuj_WyborDziecka() }
 
 
     }
@@ -40,10 +35,8 @@ class WyborKonta : AppCompatActivity() {
         startActivity(intent)
     }
 
-    private fun aktywuj_WyborOpcji(){
-        val intent= Intent(this,WyborOpcji::class.java)
+    private fun aktywuj_WyborDziecka() {
+        val intent= Intent(this,WyborDziecka::class.java)
         startActivity(intent)
     }
-
-
 }

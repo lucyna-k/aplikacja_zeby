@@ -17,11 +17,14 @@ class KontoRodzica : AppCompatActivity() {
         setContentView(R.layout.konto_rodzica)
 
         val dodajDziecko: Button = findViewById(R.id.ButtonDodajDziecko)
+        val ranking: Button = findViewById(R.id.ButtonPokazRanking)
         val wroc: Button = findViewById(R.id.Wroc)
 
         wroc.setOnClickListener { aktywuj_Wroc()}
 
         dodajDziecko.setOnClickListener { aktywuj_WprowadzanieDanych() }
+
+        ranking.setOnClickListener { aktywuj_Ranking() }
 
         val listaDzieckow = findViewById<ListView>(R.id.ListaDzieci)
 
@@ -40,8 +43,11 @@ class KontoRodzica : AppCompatActivity() {
     private fun aktywuj_Wroc() {
         val intent = Intent(this, WyborKonta::class.java)
         startActivity(intent)
-
     }
 
+    private fun aktywuj_Ranking() {
+        val intent = Intent(this, Ranking::class.java)
+        startActivity(intent)
+    }
 
 }

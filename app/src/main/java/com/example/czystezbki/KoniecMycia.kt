@@ -22,11 +22,19 @@ class KoniecMycia : AppCompatActivity() {
             }
         })
 
+        val wroc : Button =findViewById(R.id.btnPodsumowanie)
+        wroc.setOnClickListener {aktywuj_WyborOpcji()}
+
     }
     private fun akt_SprawdzSaldo(){
         val intent= Intent(this,SaldoPunktow::class.java)
         startActivity(intent)
 
+    }
+
+    private fun aktywuj_WyborOpcji(){
+        val intent= Intent(this,WyborOpcji::class.java)
+        startActivity(intent)
     }
 
 

@@ -26,6 +26,8 @@
         <activity android:name=".WyborKonta" />
         <activity android:name=".KontoRodzica" />
         <activity android:name=".WprowadzanieTerminu" />
+        <activity android:name=".Ranking" />
+        <activity android:name=".WyborDziecka" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

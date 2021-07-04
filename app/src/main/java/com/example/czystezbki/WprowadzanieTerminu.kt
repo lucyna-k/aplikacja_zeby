@@ -43,7 +43,7 @@ class WprowadzanieTerminu : AppCompatActivity() {
 
                 BazaDzieci.noweDziecko.termin=data.text.toString()
                 BazaDzieci.wszystkieDzieci.add(BazaDzieci.noweDziecko)
-                BazaDzieci.noweDziecko = Dziecko("","","","")
+                BazaDzieci.noweDziecko = Dziecko("", "", "", "", 0)
                 aktywuj_KontoRodzica()
             }
         })

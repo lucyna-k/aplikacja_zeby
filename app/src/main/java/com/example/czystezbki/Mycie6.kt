@@ -36,6 +36,7 @@ class Mycie6 : AppCompatActivity() {
         }.start()
     }
     private fun aktywuj_koniec_mycia() {
+        dodajPunkt()
         val intent= Intent(this,KoniecMycia::class.java)
         startActivity(intent)
     }
@@ -52,6 +53,10 @@ class Mycie6 : AppCompatActivity() {
             player = null
            // Toast.makeText(this, "MediaPlayer released", Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun dodajPunkt() {
+        BazaDzieci.wybraneDziecko().punkty += 1
     }
 
     override fun onStop() {
